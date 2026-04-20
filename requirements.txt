@@ -1,0 +1,8 @@
+elasticsearch==8.13.0
+sentence-transformers==3.0.1
+chromadb==0.5.0
+ollama==0.2.1
+pyyaml==6.0.1
+requests==2.31.0
+tqdm==4.66.1
+flask==3.0.3

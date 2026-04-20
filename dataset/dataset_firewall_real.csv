@@ -1,0 +1,91 @@
+timestamp,src_ip,dst_ip,src_port,dst_port,action,message,label,attack_type
+2024-04-16T08:00:00Z,192.168.1.20,192.168.1.30,50149,80,allow,"Firewall: ALLOW HTTP from 192.168.1.20:50149 to 192.168.1.30:80 — 20 packets, 11574 bytes, 46.0s elapsed",0,NONE
+2024-04-16T08:00:20Z,192.168.1.40,8.8.8.8,60400,80,allow,"Firewall: ALLOW HTTP from 192.168.1.40:60400 to 8.8.8.8:80 — 10 packets, 1704 bytes, 122.0s elapsed",0,NONE
+2024-04-16T08:00:40Z,192.168.1.30,93.184.216.34,52181,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.30:52181 to 93.184.216.34:443 — 21 packets, 7855 bytes, 15.0s elapsed",0,NONE
+2024-04-16T08:01:00Z,192.168.1.20,192.168.1.100,50281,53,allow,"Firewall: ALLOW DNS from 192.168.1.20:50281 to 192.168.1.100:53 — 2 packets, 195 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:01:20Z,192.168.1.10,192.168.1.40,1940,53,allow,"Firewall: ALLOW DNS from 192.168.1.10:1940 to 192.168.1.40:53 — 2 packets, 210 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:01:40Z,192.168.1.10,192.168.1.100,52194,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.10:52194 to 192.168.1.100:443 — 27 packets, 12374 bytes, 15.0s elapsed",0,NONE
+2024-04-16T08:02:00Z,192.168.1.40,192.168.1.50,50172,53,allow,"Firewall: ALLOW DNS from 192.168.1.40:50172 to 192.168.1.50:53 — 2 packets, 211 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:02:20Z,192.168.1.10,192.168.1.40,56911,53,allow,"Firewall: ALLOW DNS from 192.168.1.10:56911 to 192.168.1.40:53 — 2 packets, 177 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:02:40Z,192.168.1.50,192.168.1.100,46265,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.50:46265 to 192.168.1.100:443 — 245 packets, 173828 bytes, 448.0s elapsed",0,NONE
+2024-04-16T08:03:00Z,192.168.1.20,1.1.1.1,55234,53,allow,"Firewall: ALLOW DNS from 192.168.1.20:55234 to 1.1.1.1:53 — 2 packets, 177 bytes, 29.0s elapsed",0,NONE
+2024-04-16T08:03:20Z,192.168.1.40,1.1.1.1,52190,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.40:52190 to 1.1.1.1:443 — 22 packets, 7942 bytes, 15.0s elapsed",0,NONE
+2024-04-16T08:03:40Z,192.168.1.20,192.168.1.50,55476,53,allow,"Firewall: ALLOW DNS from 192.168.1.20:55476 to 192.168.1.50:53 — 2 packets, 232 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:04:00Z,192.168.1.20,192.168.1.40,35242,8635,allow,"Firewall: ALLOW TCP from 192.168.1.20:35242 to 192.168.1.40:8635 — 2 packets, 138 bytes, 6.0s elapsed",0,NONE
+2024-04-16T08:04:20Z,192.168.1.100,93.184.216.34,58615,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.100:58615 to 93.184.216.34:443 — 23 packets, 6796 bytes, 121.0s elapsed",0,NONE
+2024-04-16T08:04:40Z,192.168.1.50,192.168.1.50,9446,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.50:9446 to 192.168.1.50:443 — 22 packets, 8672 bytes, 46.0s elapsed",0,NONE
+2024-04-16T08:05:00Z,192.168.1.100,8.8.8.8,48488,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.100:48488 to 8.8.8.8:443 — 36 packets, 12993 bytes, 24.0s elapsed",0,NONE
+2024-04-16T08:05:20Z,192.168.1.50,8.8.8.8,48818,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.50:48818 to 8.8.8.8:443 — 23 packets, 4167 bytes, 15.0s elapsed",0,NONE
+2024-04-16T08:05:40Z,192.168.1.30,192.168.1.40,22767,53,allow,"Firewall: ALLOW DNS from 192.168.1.30:22767 to 192.168.1.40:53 — 2 packets, 226 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:06:00Z,192.168.1.20,93.184.216.34,9523,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.20:9523 to 93.184.216.34:443 — 22 packets, 7199 bytes, 33.0s elapsed",0,NONE
+2024-04-16T08:06:20Z,192.168.1.40,192.168.1.20,50281,53,allow,"Firewall: ALLOW DNS from 192.168.1.40:50281 to 192.168.1.20:53 — 2 packets, 195 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:06:40Z,192.168.1.10,192.168.1.20,49900,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.10:49900 to 192.168.1.20:443 — 18 packets, 1820 bytes, 73.0s elapsed",0,NONE
+2024-04-16T08:07:00Z,192.168.1.20,192.168.1.30,60339,80,allow,"Firewall: ALLOW HTTP from 192.168.1.20:60339 to 192.168.1.30:80 — 53 packets, 35136 bytes, 124.0s elapsed",0,NONE
+2024-04-16T08:07:20Z,192.168.1.100,8.8.8.8,54557,80,allow,"Firewall: ALLOW HTTP from 192.168.1.100:54557 to 8.8.8.8:80 — 10 packets, 2091 bytes, 15.0s elapsed",0,NONE
+2024-04-16T08:07:40Z,192.168.1.50,192.168.1.20,53986,54070,allow,"Firewall: ALLOW TCP from 192.168.1.50:53986 to 192.168.1.20:54070 — 1 packets, 70 bytes, 5.0s elapsed",0,NONE
+2024-04-16T08:08:00Z,192.168.1.40,8.8.8.8,43676,80,allow,"Firewall: ALLOW HTTP from 192.168.1.40:43676 to 8.8.8.8:80 — 12 packets, 696 bytes, 35.0s elapsed",0,NONE
+2024-04-16T08:08:20Z,192.168.1.50,1.1.1.1,45317,53,allow,"Firewall: ALLOW DNS from 192.168.1.50:45317 to 1.1.1.1:53 — 1 packets, 86 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:08:40Z,192.168.1.50,192.168.1.50,57886,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.50:57886 to 192.168.1.50:443 — 60 packets, 33667 bytes, 33.0s elapsed",0,NONE
+2024-04-16T08:09:00Z,192.168.1.50,192.168.1.10,56704,53,allow,"Firewall: ALLOW DNS from 192.168.1.50:56704 to 192.168.1.10:53 — 2 packets, 318 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:09:20Z,192.168.1.100,192.168.1.20,50690,80,allow,"Firewall: ALLOW HTTP from 192.168.1.100:50690 to 192.168.1.20:80 — 16 packets, 4805 bytes, 31.0s elapsed",0,NONE
+2024-04-16T08:09:40Z,192.168.1.100,93.184.216.34,60363,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.100:60363 to 93.184.216.34:443 — 22 packets, 5214 bytes, 123.0s elapsed",0,NONE
+2024-04-16T08:10:00Z,192.168.1.30,192.168.1.100,52184,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.30:52184 to 192.168.1.100:443 — 26 packets, 13902 bytes, 135.0s elapsed",0,NONE
+2024-04-16T08:10:20Z,192.168.1.10,192.168.1.50,64095,1976,allow,"Firewall: ALLOW TCP from 192.168.1.10:64095 to 192.168.1.50:1976 — 1 packets, 70 bytes, 5.0s elapsed",0,NONE
+2024-04-16T08:10:40Z,192.168.1.40,192.168.1.30,64593,53,allow,"Firewall: ALLOW DNS from 192.168.1.40:64593 to 192.168.1.30:53 — 1 packets, 94 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:11:00Z,192.168.1.40,192.168.1.10,56911,53,allow,"Firewall: ALLOW DNS from 192.168.1.40:56911 to 192.168.1.10:53 — 2 packets, 177 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:11:20Z,192.168.1.100,192.168.1.50,60423,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.100:60423 to 192.168.1.50:443 — 23 packets, 6849 bytes, 120.0s elapsed",0,NONE
+2024-04-16T08:11:40Z,192.168.1.50,192.168.1.30,54139,53,allow,"Firewall: ALLOW DNS from 192.168.1.50:54139 to 192.168.1.30:53 — 2 packets, 168 bytes, 31.0s elapsed",0,NONE
+2024-04-16T08:12:00Z,192.168.1.50,192.168.1.20,60360,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.50:60360 to 192.168.1.20:443 — 22 packets, 5212 bytes, 123.0s elapsed",0,NONE
+2024-04-16T08:12:20Z,192.168.1.100,192.168.1.50,60420,80,allow,"Firewall: ALLOW HTTP from 192.168.1.100:60420 to 192.168.1.50:80 — 24 packets, 14498 bytes, 120.0s elapsed",0,NONE
+2024-04-16T08:12:40Z,192.168.1.100,93.184.216.34,64605,25174,deny,"Firewall: DENY TCP from 192.168.1.100:64605 to 93.184.216.34:25174 — 1 packets, 62 bytes, 0.0s elapsed",0,NONE
+2024-04-16T08:13:00Z,192.168.1.50,192.168.1.40,53178,42671,allow,"Firewall: ALLOW TCP from 192.168.1.50:53178 to 192.168.1.40:42671 — 2 packets, 70 bytes, 8.0s elapsed",0,NONE
+2024-04-16T08:13:20Z,192.168.1.20,192.168.1.100,34529,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.20:34529 to 192.168.1.100:443 — 158 packets, 62652 bytes, 381.0s elapsed",0,NONE
+2024-04-16T08:13:40Z,192.168.1.20,93.184.216.34,49158,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.20:49158 to 93.184.216.34:443 — 35 packets, 14490 bytes, 36.0s elapsed",0,NONE
+2024-04-16T08:14:00Z,192.168.1.50,192.168.1.10,65004,53,allow,"Firewall: ALLOW DNS from 192.168.1.50:65004 to 192.168.1.10:53 — 2 packets, 323 bytes, 30.0s elapsed",0,NONE
+2024-04-16T08:14:20Z,192.168.1.50,192.168.1.100,56911,53,allow,"Firewall: ALLOW DNS from 192.168.1.50:56911 to 192.168.1.100:53 — 2 packets, 177 bytes, 31.0s elapsed",0,NONE
+2024-04-16T08:14:40Z,192.168.1.40,192.168.1.10,50627,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.40:50627 to 192.168.1.10:443 — 31 packets, 8256 bytes, 75.0s elapsed",0,NONE
+2024-04-16T08:15:00Z,192.168.1.10,192.168.1.100,49245,53,allow,"Firewall: ALLOW DNS from 192.168.1.10:49245 to 192.168.1.100:53 — 2 packets, 376 bytes, 29.0s elapsed",0,NONE
+2024-04-16T08:15:20Z,192.168.1.30,192.168.1.40,52148,80,allow,"Firewall: ALLOW HTTP from 192.168.1.30:52148 to 192.168.1.40:80 — 7 packets, 366 bytes, 33.0s elapsed",0,NONE
+2024-04-16T08:15:40Z,192.168.1.10,192.168.1.40,50691,80,allow,"Firewall: ALLOW HTTP from 192.168.1.10:50691 to 192.168.1.40:80 — 15 packets, 4237 bytes, 31.0s elapsed",0,NONE
+2024-04-16T08:16:00Z,192.168.1.50,192.168.1.20,50692,80,allow,"Firewall: ALLOW HTTP from 192.168.1.50:50692 to 192.168.1.20:80 — 15 packets, 5727 bytes, 31.0s elapsed",0,NONE
+2024-04-16T08:16:20Z,192.168.1.10,1.1.1.1,52715,443,allow,"Firewall: ALLOW HTTPS from 192.168.1.10:52715 to 1.1.1.1:443 — 179 packets, 164840 bytes, 122.0s elapsed",0,NONE
+2024-04-16T08:20:00Z,10.0.0.5,192.168.1.50,51414,22,deny,"Firewall: DENY SSH from 10.0.0.5:51414 to 192.168.1.50:22 — 1 packets, 60 bytes, 0.0s elapsed [SUSPICIOUS: scan probe to port 22, action=DENY]",1,Port Scan
+2024-04-16T08:20:10Z,10.0.0.5,192.168.1.20,51041,445,drop,"Firewall: DROP SMB from 10.0.0.5:51041 to 192.168.1.20:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:20:20Z,10.0.0.5,192.168.1.50,55725,445,drop,"Firewall: DROP SMB from 10.0.0.5:55725 to 192.168.1.50:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:20:30Z,10.0.0.5,23.106.223.1,50928,445,drop,"Firewall: DROP SMB from 10.0.0.5:50928 to 23.106.223.1:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:20:40Z,10.0.0.5,192.168.1.50,51012,445,drop,"Firewall: DROP SMB from 10.0.0.5:51012 to 192.168.1.50:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:20:50Z,10.0.0.5,192.168.1.100,55683,445,drop,"Firewall: DROP SMB from 10.0.0.5:55683 to 192.168.1.100:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:21:00Z,10.0.0.5,91.108.4.1,51021,445,drop,"Firewall: DROP SMB from 10.0.0.5:51021 to 91.108.4.1:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:21:10Z,10.0.0.5,194.165.16.1,55717,445,drop,"Firewall: DROP SMB from 10.0.0.5:55717 to 194.165.16.1:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:21:20Z,10.0.0.5,172.105.78.1,55593,445,drop,"Firewall: DROP SMB from 10.0.0.5:55593 to 172.105.78.1:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:21:30Z,10.0.0.5,185.220.101.1,51119,445,drop,"Firewall: DROP SMB from 10.0.0.5:51119 to 185.220.101.1:445 — 1 packets, 66 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:21:40Z,10.0.0.5,5.252.153.241,50942,445,drop,"Firewall: DROP SMB from 10.0.0.5:50942 to 5.252.153.241:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:21:50Z,10.0.0.5,192.168.1.20,50993,445,drop,"Firewall: DROP SMB from 10.0.0.5:50993 to 192.168.1.20:445 — 1 packets, 66 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:22:00Z,10.0.0.5,192.168.1.10,50970,445,drop,"Firewall: DROP SMB from 10.0.0.5:50970 to 192.168.1.10:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:22:10Z,10.0.0.5,5.252.153.241,51124,445,drop,"Firewall: DROP SMB from 10.0.0.5:51124 to 5.252.153.241:445 — 1 packets, 66 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:22:20Z,10.0.0.5,5.252.153.241,55635,445,drop,"Firewall: DROP SMB from 10.0.0.5:55635 to 5.252.153.241:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:22:30Z,10.0.0.5,192.168.1.10,50992,445,drop,"Firewall: DROP SMB from 10.0.0.5:50992 to 192.168.1.10:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:22:40Z,10.0.0.5,192.168.1.30,55723,445,drop,"Firewall: DROP SMB from 10.0.0.5:55723 to 192.168.1.30:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:22:50Z,10.0.0.5,192.168.1.20,55592,445,drop,"Firewall: DROP SMB from 10.0.0.5:55592 to 192.168.1.20:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:23:00Z,10.0.0.5,192.168.1.100,50997,445,drop,"Firewall: DROP SMB from 10.0.0.5:50997 to 192.168.1.100:445 — 1 packets, 66 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:23:10Z,10.0.0.5,192.168.1.50,55698,445,drop,"Firewall: DROP SMB from 10.0.0.5:55698 to 192.168.1.50:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:23:20Z,10.0.0.5,192.168.1.20,51018,445,drop,"Firewall: DROP SMB from 10.0.0.5:51018 to 192.168.1.20:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:23:30Z,10.0.0.5,192.168.1.40,55646,445,drop,"Firewall: DROP SMB from 10.0.0.5:55646 to 192.168.1.40:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:23:40Z,10.0.0.5,45.125.66.32,51047,445,drop,"Firewall: DROP SMB from 10.0.0.5:51047 to 45.125.66.32:445 — 1 packets, 66 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:23:50Z,10.0.0.5,192.168.1.30,55597,445,drop,"Firewall: DROP SMB from 10.0.0.5:55597 to 192.168.1.30:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:24:00Z,10.0.0.5,172.105.78.1,55641,445,drop,"Firewall: DROP SMB from 10.0.0.5:55641 to 172.105.78.1:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:24:10Z,10.0.0.5,192.168.1.10,55701,445,drop,"Firewall: DROP SMB from 10.0.0.5:55701 to 192.168.1.10:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:24:20Z,10.0.0.5,192.168.1.100,51032,445,drop,"Firewall: DROP SMB from 10.0.0.5:51032 to 192.168.1.100:445 — 1 packets, 66 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:24:30Z,10.0.0.5,23.106.223.1,55633,445,drop,"Firewall: DROP SMB from 10.0.0.5:55633 to 23.106.223.1:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:24:40Z,10.0.0.5,192.168.1.10,50937,445,drop,"Firewall: DROP SMB from 10.0.0.5:50937 to 192.168.1.10:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:24:50Z,10.0.0.5,185.220.101.1,50998,445,drop,"Firewall: DROP SMB from 10.0.0.5:50998 to 185.220.101.1:445 — 1 packets, 66 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:25:00Z,10.0.0.5,192.168.1.20,50995,445,drop,"Firewall: DROP SMB from 10.0.0.5:50995 to 192.168.1.20:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:25:10Z,10.0.0.5,91.108.4.1,50908,445,drop,"Firewall: DROP SMB from 10.0.0.5:50908 to 91.108.4.1:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:25:20Z,10.0.0.5,45.125.66.32,51065,445,drop,"Firewall: DROP SMB from 10.0.0.5:51065 to 45.125.66.32:445 — 1 packets, 66 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:25:30Z,10.0.0.5,45.125.66.32,50996,445,drop,"Firewall: DROP SMB from 10.0.0.5:50996 to 45.125.66.32:445 — 1 packets, 66 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:25:40Z,10.0.0.5,5.252.153.241,50902,445,drop,"Firewall: DROP SMB from 10.0.0.5:50902 to 5.252.153.241:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:25:50Z,10.0.0.5,192.168.1.20,51048,445,drop,"Firewall: DROP SMB from 10.0.0.5:51048 to 192.168.1.20:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:26:00Z,10.0.0.5,172.105.78.1,51034,445,drop,"Firewall: DROP SMB from 10.0.0.5:51034 to 172.105.78.1:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:26:10Z,10.0.0.5,23.106.223.1,55596,445,drop,"Firewall: DROP SMB from 10.0.0.5:55596 to 23.106.223.1:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:26:20Z,10.0.0.5,192.168.1.20,51003,445,drop,"Firewall: DROP SMB from 10.0.0.5:51003 to 192.168.1.20:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan
+2024-04-16T08:26:30Z,10.0.0.5,23.106.223.1,55619,445,drop,"Firewall: DROP SMB from 10.0.0.5:55619 to 23.106.223.1:445 — 1 packets, 70 bytes, 0.0s elapsed",1,Blocked Scan

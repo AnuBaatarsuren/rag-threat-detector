@@ -1,0 +1,16 @@
+config.yaml
+threat_db/
+logs/
+*.log
+baseline.json
+filebeat/registry/
+__pycache__/
+*.pyc
+venv/
+.env
+datasets/
+elasticsearch/
+kibana/
+logstash/
+filebeat/filebeat
+output/
